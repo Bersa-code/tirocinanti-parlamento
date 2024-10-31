@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internship Platform for the European Parliament</title>
+    <title>TraineeCareerHub</title>
     <style>
         body, html {
             margin: 0;
@@ -11,7 +11,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: url('https://source.unsplash.com/1600x900/?office,career') no-repeat center center fixed; /* Cambia l'URL con il tuo */
+            background: url('https://source.unsplash.com/1600x900/?business,office') no-repeat center center fixed;
             background-size: cover;
             font-family: Arial, sans-serif;
             color: white;
@@ -22,12 +22,16 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.5); /* Trasparenza nera */
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
             text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
         }
         button {
             padding: 15px 30px;
@@ -47,8 +51,7 @@
 </head>
 <body>
     <div class="overlay">
-        <h1>Welcome to the Internship Platform</h1>
-        <p>Who are you?</p>
+        <h1>TraineeCareerHub</h1>
         <button onclick="location.href='#intern'">Intern</button>
         <button onclick="location.href='#company'">Company</button>
     </div>
