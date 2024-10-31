@@ -31,6 +31,16 @@
         }
         h1 {
             font-size: 48px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            margin: 0;
+        }
+        .welcome {
+            margin-top: 80px; /* Spazio sopra il messaggio di benvenuto */
+        }
+        .welcome h2 {
+            font-size: 32px;
             margin-bottom: 20px;
         }
         button {
@@ -52,8 +62,12 @@
 <body>
     <div class="overlay">
         <h1>TraineeCareerHub</h1>
-        <button onclick="location.href='#intern'">Intern</button>
-        <button onclick="location.href='#company'">Company</button>
+        <div class="welcome">
+            <h2>Welcome!</h2>
+            <p>Who are you?</p>
+            <button onclick="location.href='#intern'">Intern</button>
+            <button onclick="location.href='#company'">Company</button>
+        </div>
     </div>
 </body>
 </html>
