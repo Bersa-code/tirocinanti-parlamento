@@ -1,117 +1,56 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piattaforma Tirocinanti del Parlamento Europeo</title>
+    <title>Internship Platform for the European Parliament</title>
     <style>
-        body {
+        body, html {
             margin: 0;
-            font-family: Arial, sans-serif;
-            height: 100vh;
+            height: 100%;
             display: flex;
-            flex-direction: column;
-        }
-        header {
-            background: #0073e6;
+            justify-content: center;
+            align-items: center;
+            background: url('https://source.unsplash.com/1600x900/?office,career') no-repeat center center fixed; /* Cambia l'URL con il tuo */
+            background-size: cover;
+            font-family: Arial, sans-serif;
             color: white;
-            padding: 20px;
-            text-align: center;
         }
-        .container {
-            flex: 1;
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Trasparenza nera */
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            background-color: #f4f4f4;
-        }
-        .welcome {
             text-align: center;
-            margin: 20px 0;
         }
         button {
-            padding: 10px 20px;
+            padding: 15px 30px;
             background: #0073e6;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 18px;
             margin: 10px;
+            transition: background 0.3s;
         }
         button:hover {
             background: #005bb5;
         }
-        .section {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .tirocinanti, .aziende {
-            flex: 1;
-            margin: 0 10px;
-        }
-        .news {
-            background: #e6f7ff;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .guide {
-            margin-top: 10px;
-            list-style-type: none;
-            padding: 0;
-        }
-        .guide li {
-            margin: 5px 0;
-        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Logo della Piattaforma</h1>
-        <nav>
-            <a href="#">Home</a> | 
-            <a href="#">Chi Siamo</a> | 
-            <a href="#">Risorse</a> | 
-            <a href="#">Contatti</a>
-        </nav>
-    </header>
-    <div class="container">
-        <div class="welcome">
-            <h2>Benvenuto!</h2>
-            <p>Chi sei? Tirocinante o Azienda?</p>
-            <button onclick="location.href='#tirocinanti'">Tirocinante</button>
-            <button onclick="location.href='#aziende'">Azienda</button>
-        </div>
-        <div class="section">
-            <div class="tirocinanti" id="tirocinanti">
-                <h3>Area Tirocinanti</h3>
-                <button>Registrati e Crea Profilo</button>
-                <div class="news">
-                    <h4>Ultime Notizie</h4>
-                    <p>Scopri le fiere del lavoro e gli eventi più recenti.</p>
-                </div>
-                <h4>Guide Pratiche</h4>
-                <ul class="guide">
-                    <li><a href="#cv-guide">Preparazione del CV</a></li>
-                    <li><a href="#interview-guide">Preparazione per il Colloquio</a></li>
-                </ul>
-            </div>
-            <div class="aziende" id="aziende">
-                <h3>Area Aziende</h3>
-                <button>Pubblica Annuncio di Lavoro</button>
-                <h4>Ricerca Profili</h4>
-                <p>Accesso ai profili dei tirocinanti tramite filtri.</p>
-            </div>
-        </div>
+    <div class="overlay">
+        <h1>Welcome to the Internship Platform</h1>
+        <p>Who are you?</p>
+        <button onclick="location.href='#intern'">Intern</button>
+        <button onclick="location.href='#company'">Company</button>
     </div>
 </body>
 </html>
-
